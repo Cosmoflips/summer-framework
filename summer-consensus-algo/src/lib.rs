@@ -1,3 +1,2 @@
-pub mod raft;
-
-pub mod grpc;
+pub mod state;
+pub mod rpc;
