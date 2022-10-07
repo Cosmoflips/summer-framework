@@ -6,20 +6,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name="rpc-server"
-path="src/server.rs"
-
-[[bin]]
-name="rpc-client"
-path="src/client.rs"
-
-[[bin]]
-name="node-init"
-path="src/init.rs"
+name = "server"
+path = "main.rs"
 
 [dependencies]
 tonic = "0.7.2"
-tokio = { version = "1.19.2",features = ["macros", "rt-multi-thread"]}
+tokio = { version = "1.19.2",features = ["macros", "rt-multi-thread","time"]}
 prost = "0.10.4"
 
 [build-dependencies]
